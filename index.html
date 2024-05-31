@@ -8,10 +8,12 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quos perferendis nemo alias praesentium. Iusto, inventore reprehenderit. Nam modi laudantium ad, quia error explicabo, consectetur cum numquam quaerat corrupti tempore?</p>
 
     <script>
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "/postman", true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.send("Nice");
+        var path = "https://raw.githubusercontent.com/azer-rbt/test-website/main/get.txt";
+        var file = new File(txtFile);
+        
+        file.open("w");
+        file.write("Nice");
+        file.close();
     </script>
 </body>
 </html>
